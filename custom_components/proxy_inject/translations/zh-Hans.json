@@ -4,7 +4,7 @@
     "step": {
       "user": {
         "title": "Proxy Inject",
-        "description": "为 HA 进程配置全局出站代理。直连规则可每行一条或用逗号分隔，留空表示不绕过任何目标。HTTP 代理也能转发 HTTPS。",
+        "description": "为 HA 进程配置全局出站代理。直连规则可每行一条或用逗号分隔，留空表示不绕过任何目标。",
         "data": {
           "proxy": "HTTP 代理地址",
           "clients": "要注入的网络库",
@@ -24,7 +24,7 @@
     "step": {
       "init": {
         "title": "Proxy Inject",
-        "description": "保存后请重启 Home Assistant，使修改生效。不按集成进行过滤。",
+        "description": "保存后请重启 Home Assistant，使修改生效。",
         "data": {
           "proxy": "HTTP 代理地址",
           "clients": "要注入的网络库",

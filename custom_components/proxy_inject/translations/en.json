@@ -4,7 +4,7 @@
     "step": {
       "user": {
         "title": "Proxy Inject",
-        "description": "Configure a process-wide outbound proxy. no_proxy accepts one rule per line or comma-separated rules. Empty means no bypass. HTTP proxies also tunnel HTTPS.",
+        "description": "Configure a process-wide outbound proxy. no_proxy accepts one rule per line or comma-separated rules. Empty means no bypass.",
         "data": {
           "proxy": "HTTP proxy URL",
           "clients": "Network libraries to inject",
@@ -24,7 +24,7 @@
     "step": {
       "init": {
         "title": "Proxy Inject",
-        "description": "Save settings, then restart Home Assistant to apply them. No integration-level filtering is performed.",
+        "description": "Save settings, then restart Home Assistant to apply them.",
         "data": {
           "proxy": "HTTP proxy URL",
           "clients": "Network libraries to inject",
