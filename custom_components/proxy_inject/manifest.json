@@ -1,0 +1,13 @@
+{
+  "domain": "proxy_inject",
+  "name": "Proxy Inject",
+  "version": "0.1.1",
+  "config_flow": true,
+  "codeowners": ["@xWTF"],
+  "documentation": "https://github.com/xWTF/hass-proxy-inject",
+  "issue_tracker": "https://github.com/xWTF/hass-proxy-inject/issues",
+  "dependencies": [],
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "requirements": []
+}

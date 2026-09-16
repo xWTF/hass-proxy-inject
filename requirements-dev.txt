@@ -1,0 +1,6 @@
+# Linux/WSL, Python 3.14; matches the verified Home Assistant runtime.
+homeassistant==2026.9.2
+pytest==9.1.1
+pytest-asyncio==1.4.0
+ruff==0.16.7
+PyYAML==6.0.3

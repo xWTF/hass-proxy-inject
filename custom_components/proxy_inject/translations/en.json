@@ -1,0 +1,39 @@
+{
+  "title": "Proxy Inject",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Proxy Inject",
+        "description": "Configure a process-wide outbound proxy. no_proxy accepts one rule per line or comma-separated rules. Empty means no bypass. HTTP proxies also tunnel HTTPS.",
+        "data": {
+          "proxy": "HTTP proxy URL",
+          "clients": "Network libraries to inject",
+          "no_proxy": "Direct connections (no_proxy)"
+        }
+      }
+    },
+    "error": {
+      "invalid_config": "Check the HTTP proxy URL, select at least one library, and use valid no_proxy rules."
+    },
+    "abort": {
+      "single_instance_allowed": "Only one Proxy Inject instance is allowed.",
+      "yaml_active": "Remove the proxy_inject YAML configuration and restart Home Assistant before using the UI."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Proxy Inject",
+        "description": "Save settings, then restart Home Assistant to apply them. No integration-level filtering is performed.",
+        "data": {
+          "proxy": "HTTP proxy URL",
+          "clients": "Network libraries to inject",
+          "no_proxy": "Direct connections (no_proxy)"
+        }
+      }
+    },
+    "error": {
+      "invalid_config": "Check the HTTP proxy URL, select at least one library, and use valid no_proxy rules."
+    }
+  }
+}

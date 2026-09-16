@@ -1,0 +1,39 @@
+{
+  "title": "Proxy Inject",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Proxy Inject",
+        "description": "为 HA 进程配置全局出站代理。直连规则可每行一条或用逗号分隔，留空表示不绕过任何目标。HTTP 代理也能转发 HTTPS。",
+        "data": {
+          "proxy": "HTTP 代理地址",
+          "clients": "要注入的网络库",
+          "no_proxy": "直连规则（no_proxy）"
+        }
+      }
+    },
+    "error": {
+      "invalid_config": "请检查 HTTP 代理地址、至少勾选一个网络库，并填写有效的直连规则。"
+    },
+    "abort": {
+      "single_instance_allowed": "只允许配置一个 Proxy Inject 实例。",
+      "yaml_active": "请先删除 proxy_inject 的 YAML 配置并重启 Home Assistant，再使用 UI。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Proxy Inject",
+        "description": "保存后请重启 Home Assistant，使修改生效。不按集成进行过滤。",
+        "data": {
+          "proxy": "HTTP 代理地址",
+          "clients": "要注入的网络库",
+          "no_proxy": "直连规则（no_proxy）"
+        }
+      }
+    },
+    "error": {
+      "invalid_config": "请检查 HTTP 代理地址、至少勾选一个网络库，并填写有效的直连规则。"
+    }
+  }
+}
